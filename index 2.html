@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Aviator Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      background: #0d0d0d;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.3em;
+    }
+    p {
+      color: #aaa;
+    }
+    .plane {
+      width: 100px;
+      animation: fly 3s linear infinite;
+    }
+    @keyframes fly {
+      0% { transform: translateX(-150px); }
+      100% { transform: translateX(150px); }
+    }
+    .x-factor {
+      font-size: 2em;
+      color: #00ffcc;
+      margin-top: 1em;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎲 Aviator</h1>
+  <img class="plane" src="https://cdn-icons-png.flaticon.com/512/68/68293.png" alt="Plane">
+  <div class="x-factor">X1.00</div>
+  <p>Нажмите «Получить бонус» в Telegram-боте</p>
+</body>
+</html>
